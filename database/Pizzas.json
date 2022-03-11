@@ -59,7 +59,7 @@
             "presunto"
         ],
         "preco": 40.5,
-        "img": "/img/quatroqueijos.jpg",
+        "img": "/img/portuguesa.jpg",
         "destaque": true
     },
     {
@@ -71,7 +71,7 @@
             "frango"
         ],
         "preco": 38.5,
-        "img": "/img/quatroqueijos.jpg",
+        "img": "/img/caipira.jpg",
         "destaque": true
     },
     {
@@ -84,7 +84,7 @@
             "parmesão"
         ],
         "preco": 55.5,
-        "img": "/img/quatroqueijos.jpg",
+        "img": "/img/napolitana.jpg",
         "destaque": true
     },
     {
@@ -97,7 +97,7 @@
             "parmesão"
         ],
         "preco": 38.5,
-        "img": "/img/quatroqueijos.jpg",
+        "img": "/img/baiana.jpg",
         "destaque": true
     },
     {
@@ -109,7 +109,7 @@
             "bacon"
         ],
         "preco": 38.5,
-        "img": "/img/quatroqueijos.jpg",
+        "img": "/img/meat&bacon.jpg",
         "destaque": true
     },
     {
@@ -121,7 +121,7 @@
             "tomate seco"
         ],
         "preco": 38.5,
-        "img": "/img/quatroqueijos.jpg",
+        "img": "/img/rúcula.jpg",
         "destaque": true
     }
 ]
