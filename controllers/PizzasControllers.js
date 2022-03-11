@@ -4,8 +4,23 @@ const PizzasControllers = {
     },
     mostrar:(req,res) =>{
      let id = req.params.id;
-     pizzas.find(p=>p.id==id)
-     res.render('pizza.ejs', {pizzas})
+     let pizza = pizzas.find(p=>p.id==id)
+     res.render('pizza.ejs', {pizza})
+     
+    //  const Pizza = pizzas.find(buscar)
+    //     res.render('pizza.ejs',{pizza, posicao})
+
+    //     let posicao = pizzas.indexOf (Pizza)
+
+    //     let idProxima = null
+    //     if (posicao < pizzas.length - 1) {
+    //         idProxima = pizzas[posicao + 1].id
+    //     }
+
+    //     let idAnterior = null 
+    //     if (posicao > 0) {
+    //         idAnterior = pizzas[posicao - 1].id
+    //     }
     },
     buscar: (req,res) =>{
         let busca = req.query.q;
