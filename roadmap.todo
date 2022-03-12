@@ -246,7 +246,7 @@ Fase 15 - Passando de uma pizza para outra:
     Nessa fase, faremos com que na página que exibe os detalhes de
     uma pizza, seja possível navegar para a próxima pizza e para
     a pizza anterior clicando nos links em forma de seta
-    ☐ Na função mostrar no arquivo PizzasController:
+    ✔ Na função mostrar no arquivo PizzasController: @done(22-03-11 22:17)
         - Declare duas variáveis: idProxima e idAnterior 
         - Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id)
         - Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao

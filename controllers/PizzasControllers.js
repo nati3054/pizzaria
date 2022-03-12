@@ -6,10 +6,10 @@ const PizzasControllers = {
         let idProxima;
         let idAnterior;
         let id = req.params.id;
-        let pizza = pizzas.find(p => p.id == id);
-        res.render('pizza.ejs',{pizza});
+        // let pizza = pizzas.find(p => p.id == id);
+        // res.render('pizza.ejs',{pizza});
         let posicao = pizzas.findIndex(p => p.id == id);
-        let pizzaPosição = pizzas[posicao];
+        let pizza = pizzas[posicao];
         if(posicao == pizzas.length - 1){
             idProxima = pizzas[0].id
         } else {
