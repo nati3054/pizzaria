@@ -3,24 +3,24 @@ const PizzasControllers = {
      res.render('pizzas.ejs',{pizzas,busca:''})
     },
     mostrar:(req,res) =>{
-     let id = req.params.id;
-     let pizza = pizzas.find(p=>p.id==id)
-     res.render('pizza.ejs', {pizza})
-     
-    //  const Pizza = pizzas.find(buscar)
-    //     res.render('pizza.ejs',{pizza, posicao})
-
-    //     let posicao = pizzas.indexOf (Pizza)
-
-    //     let idProxima = null
-    //     if (posicao < pizzas.length - 1) {
-    //         idProxima = pizzas[posicao + 1].id
-    //     }
-
-    //     let idAnterior = null 
-    //     if (posicao > 0) {
-    //         idAnterior = pizzas[posicao - 1].id
-    //     }
+        let idProxima;
+        let idAnterior;
+        let id = req.params.id;
+        let pizza = pizzas.find(p => p.id == id);
+        res.render('pizza.ejs',{pizza});
+        let posicao = pizzas.findIndex(p => p.id == id);
+        let pizzaPosição = pizzas[posicao];
+        if(posicao == pizzas.length - 1){
+            idProxima = pizzas[0].id
+        } else {
+            idProxima = pizzas[posicao + 1].id;
+        }
+        if(posicao == 0){
+            idAnterior = pizzas[pizzas.length - 1].id;
+        } else {
+            idAnterior = pizzas[posicao - 1].id;
+        }
+        res.render('pizza.ejs',{pizza, idAnterior, idProxima});
     },
     buscar: (req,res) =>{
         let busca = req.query.q;
